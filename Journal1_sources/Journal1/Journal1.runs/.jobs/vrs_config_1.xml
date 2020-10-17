@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="TopLevel_multiplexer_4x1_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/TopLevel_multiplexer_4x1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_counter_4bits_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/TopLevel_counter_4bits_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_bundle_splitter_mux_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/TopLevel_bundle_splitter_mux_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_lookUp_table_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/TopLevel_lookUp_table_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_bundle_splitter_dec_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/TopLevel_bundle_splitter_dec_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_decoder_2x4_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/TopLevel_decoder_2x4_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="TopLevel_inverter_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/TopLevel_inverter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="TopLevel_multiplexer_4x1_0_0_synth_1"/>
+		<Parent Id="TopLevel_counter_4bits_0_0_synth_1"/>
+		<Parent Id="TopLevel_bundle_splitter_mux_0_0_synth_1"/>
+		<Parent Id="TopLevel_lookUp_table_0_0_synth_1"/>
+		<Parent Id="TopLevel_bundle_splitter_dec_0_0_synth_1"/>
+		<Parent Id="TopLevel_decoder_2x4_0_0_synth_1"/>
+		<Parent Id="TopLevel_inverter_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="TopLevel_multiplexer_4x1_0_0_synth_1"/>
+		<Parent Id="TopLevel_counter_4bits_0_0_synth_1"/>
+		<Parent Id="TopLevel_bundle_splitter_mux_0_0_synth_1"/>
+		<Parent Id="TopLevel_lookUp_table_0_0_synth_1"/>
+		<Parent Id="TopLevel_bundle_splitter_dec_0_0_synth_1"/>
+		<Parent Id="TopLevel_decoder_2x4_0_0_synth_1"/>
+		<Parent Id="TopLevel_inverter_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

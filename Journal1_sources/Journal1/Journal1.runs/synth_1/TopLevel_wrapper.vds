@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 22 16:07:04 2020
+# Process ID: 8475
+# Current directory: /home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1
+# Command line: vivado -log TopLevel_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel_wrapper.tcl
+# Log file: /home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/TopLevel_wrapper.vds
+# Journal file: /home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source TopLevel_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:01:11 ; elapsed = 00:00:41 . Memory (MB): peak = 1493.758 ; gain = 144.070 ; free physical = 4249 ; free virtual = 15813
+Command: synth_design -top TopLevel_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8982 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1493.758 ; gain = 0.000 ; free physical = 4137 ; free virtual = 15701
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel_wrapper' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/hdl/TopLevel_wrapper.vhd:25]
+INFO: [Synth 8-3491] module 'TopLevel' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:14' bound to instance 'TopLevel_i' of component 'TopLevel' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/hdl/TopLevel_wrapper.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:29]
+INFO: [Synth 8-3491] module 'TopLevel_bundle_splitter_dec_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_bundle_splitter_dec_0_0_stub.vhdl:5' bound to instance 'bundle_splitter_dec_0' of component 'TopLevel_bundle_splitter_dec_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_bundle_splitter_dec_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_bundle_splitter_dec_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'TopLevel_bundle_splitter_mux_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_bundle_splitter_mux_0_0_stub.vhdl:5' bound to instance 'bundle_splitter_mux_0' of component 'TopLevel_bundle_splitter_mux_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_bundle_splitter_mux_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_bundle_splitter_mux_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'TopLevel_clock_scaler1_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_clock_scaler1_0_0_stub.vhdl:5' bound to instance 'clock_scaler1_0' of component 'TopLevel_clock_scaler1_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_clock_scaler1_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_clock_scaler1_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'TopLevel_counter_4bits_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_counter_4bits_0_0_stub.vhdl:5' bound to instance 'counter_4bits_0' of component 'TopLevel_counter_4bits_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_counter_4bits_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_counter_4bits_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'TopLevel_debounce_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_debounce_0_0_stub.vhdl:5' bound to instance 'debounce_0' of component 'TopLevel_debounce_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_debounce_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_debounce_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'TopLevel_decoder_2x4_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_decoder_2x4_0_0_stub.vhdl:5' bound to instance 'decoder_2x4_0' of component 'TopLevel_decoder_2x4_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_decoder_2x4_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_decoder_2x4_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'TopLevel_display_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_display_0_0_stub.vhdl:5' bound to instance 'display_0' of component 'TopLevel_display_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_display_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_display_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'TopLevel_inverter_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_inverter_0_0_stub.vhdl:5' bound to instance 'inverter_0' of component 'TopLevel_inverter_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_inverter_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_inverter_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'TopLevel_latch_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_latch_0_0_stub.vhdl:5' bound to instance 'latch_0' of component 'TopLevel_latch_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_latch_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_latch_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'TopLevel_lookUp_table_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_lookUp_table_0_0_stub.vhdl:5' bound to instance 'lookUp_table_0' of component 'TopLevel_lookUp_table_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_lookUp_table_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_lookUp_table_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'TopLevel_multiplexer_4x1_0_0' declared at '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_multiplexer_4x1_0_0_stub.vhdl:5' bound to instance 'multiplexer_4x1_0' of component 'TopLevel_multiplexer_4x1_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'TopLevel_multiplexer_4x1_0_0' [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/.Xil/Vivado-8475-E7440-big-ARCH/realtime/TopLevel_multiplexer_4x1_0_0_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (1#1) [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/synth/TopLevel.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel_wrapper' (2#1) [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/hdl/TopLevel_wrapper.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1493.758 ; gain = 0.000 ; free physical = 4149 ; free virtual = 15714
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1493.758 ; gain = 0.000 ; free physical = 4149 ; free virtual = 15713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1493.758 ; gain = 0.000 ; free physical = 4149 ; free virtual = 15713
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_counter_4bits_0_0/TopLevel_counter_4bits_0_0/TopLevel_counter_4bits_0_0_in_context.xdc] for cell 'TopLevel_i/counter_4bits_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_counter_4bits_0_0/TopLevel_counter_4bits_0_0/TopLevel_counter_4bits_0_0_in_context.xdc] for cell 'TopLevel_i/counter_4bits_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_decoder_2x4_0_0/TopLevel_decoder_2x4_0_0/TopLevel_decoder_2x4_0_0_in_context.xdc] for cell 'TopLevel_i/decoder_2x4_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_decoder_2x4_0_0/TopLevel_decoder_2x4_0_0/TopLevel_decoder_2x4_0_0_in_context.xdc] for cell 'TopLevel_i/decoder_2x4_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_bundle_splitter_mux_0_0/TopLevel_bundle_splitter_mux_0_0/TopLevel_bundle_splitter_mux_0_0_in_context.xdc] for cell 'TopLevel_i/bundle_splitter_mux_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_bundle_splitter_mux_0_0/TopLevel_bundle_splitter_mux_0_0/TopLevel_bundle_splitter_mux_0_0_in_context.xdc] for cell 'TopLevel_i/bundle_splitter_mux_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_bundle_splitter_dec_0_0/TopLevel_bundle_splitter_dec_0_0/TopLevel_bundle_splitter_dec_0_0_in_context.xdc] for cell 'TopLevel_i/bundle_splitter_dec_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_bundle_splitter_dec_0_0/TopLevel_bundle_splitter_dec_0_0/TopLevel_bundle_splitter_dec_0_0_in_context.xdc] for cell 'TopLevel_i/bundle_splitter_dec_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_lookUp_table_0_0/TopLevel_lookUp_table_0_0/TopLevel_lookUp_table_0_0_in_context.xdc] for cell 'TopLevel_i/lookUp_table_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_lookUp_table_0_0/TopLevel_lookUp_table_0_0/TopLevel_lookUp_table_0_0_in_context.xdc] for cell 'TopLevel_i/lookUp_table_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_multiplexer_4x1_0_0/TopLevel_multiplexer_4x1_0_0/TopLevel_multiplexer_4x1_0_0_in_context.xdc] for cell 'TopLevel_i/multiplexer_4x1_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_multiplexer_4x1_0_0/TopLevel_multiplexer_4x1_0_0/TopLevel_multiplexer_4x1_0_0_in_context.xdc] for cell 'TopLevel_i/multiplexer_4x1_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_inverter_0_0/TopLevel_inverter_0_0/TopLevel_inverter_0_0_in_context.xdc] for cell 'TopLevel_i/inverter_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_inverter_0_0/TopLevel_inverter_0_0/TopLevel_inverter_0_0_in_context.xdc] for cell 'TopLevel_i/inverter_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_clock_scaler1_0_0/TopLevel_clock_scaler1_0_0/TopLevel_clock_scaler1_0_0_in_context.xdc] for cell 'TopLevel_i/clock_scaler1_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_clock_scaler1_0_0/TopLevel_clock_scaler1_0_0/TopLevel_clock_scaler1_0_0_in_context.xdc] for cell 'TopLevel_i/clock_scaler1_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_latch_0_0/TopLevel_latch_0_0/TopLevel_latch_0_0_in_context.xdc] for cell 'TopLevel_i/latch_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_latch_0_0/TopLevel_latch_0_0/TopLevel_latch_0_0_in_context.xdc] for cell 'TopLevel_i/latch_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_debounce_0_0/TopLevel_debounce_0_0/TopLevel_debounce_0_0_in_context.xdc] for cell 'TopLevel_i/debounce_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_debounce_0_0/TopLevel_debounce_0_0/TopLevel_debounce_0_0_in_context.xdc] for cell 'TopLevel_i/debounce_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_display_0_0/TopLevel_display_0_0/TopLevel_display_0_0_in_context.xdc] for cell 'TopLevel_i/display_0'
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/bd/TopLevel/ip/TopLevel_display_0_0/TopLevel_display_0_0/TopLevel_display_0_0_in_context.xdc] for cell 'TopLevel_i/display_0'
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'in1_0[4]'. [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'in1_0[5]'. [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'in1_0[6]'. [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'in1_0[7]'. [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc:101]
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TopLevel_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/constrs_1/new/pinLayout1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevel_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopLevel_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1690.680 ; gain = 0.000 ; free physical = 3875 ; free virtual = 15439
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1690.680 ; gain = 0.000 ; free physical = 3876 ; free virtual = 15441
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1690.680 ; gain = 0.000 ; free physical = 3876 ; free virtual = 15441
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1690.680 ; gain = 0.000 ; free physical = 3876 ; free virtual = 15441
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1690.680 ; gain = 196.922 ; free physical = 3952 ; free virtual = 15516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1690.680 ; gain = 196.922 ; free physical = 3952 ; free virtual = 15516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for TopLevel_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/counter_4bits_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/decoder_2x4_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/bundle_splitter_mux_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/bundle_splitter_dec_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/lookUp_table_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/multiplexer_4x1_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/inverter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/clock_scaler1_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/latch_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/debounce_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TopLevel_i/display_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1690.680 ; gain = 196.922 ; free physical = 3954 ; free virtual = 15519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1690.680 ; gain = 196.922 ; free physical = 3953 ; free virtual = 15518
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1690.680 ; gain = 196.922 ; free physical = 3951 ; free virtual = 15517
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1690.680 ; gain = 196.922 ; free physical = 3823 ; free virtual = 15389
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1690.680 ; gain = 196.922 ; free physical = 3823 ; free virtual = 15389
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |TopLevel_bundle_splitter_dec_0_0 |         1|
+|2     |TopLevel_bundle_splitter_mux_0_0 |         1|
+|3     |TopLevel_clock_scaler1_0_0       |         1|
+|4     |TopLevel_counter_4bits_0_0       |         1|
+|5     |TopLevel_debounce_0_0            |         1|
+|6     |TopLevel_decoder_2x4_0_0         |         1|
+|7     |TopLevel_display_0_0             |         1|
+|8     |TopLevel_inverter_0_0            |         1|
+|9     |TopLevel_latch_0_0               |         1|
+|10    |TopLevel_lookUp_table_0_0        |         1|
+|11    |TopLevel_multiplexer_4x1_0_0     |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |TopLevel_bundle_splitter_dec_0_0_bbox_0 |     1|
+|2     |TopLevel_bundle_splitter_mux_0_0_bbox_1 |     1|
+|3     |TopLevel_clock_scaler1_0_0_bbox_2       |     1|
+|4     |TopLevel_counter_4bits_0_0_bbox_3       |     1|
+|5     |TopLevel_debounce_0_0_bbox_4            |     1|
+|6     |TopLevel_decoder_2x4_0_0_bbox_5         |     1|
+|7     |TopLevel_display_0_0_bbox_6             |     1|
+|8     |TopLevel_inverter_0_0_bbox_7            |     1|
+|9     |TopLevel_latch_0_0_bbox_8               |     1|
+|10    |TopLevel_lookUp_table_0_0_bbox_9        |     1|
+|11    |TopLevel_multiplexer_4x1_0_0_bbox_10    |     1|
+|12    |IBUF                                    |     6|
+|13    |OBUF                                    |    16|
++------+----------------------------------------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |    54|
+|2     |  TopLevel_i |TopLevel |    32|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.688 ; gain = 204.930 ; free physical = 3822 ; free virtual = 15388
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1698.688 ; gain = 8.008 ; free physical = 3879 ; free virtual = 15446
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.695 ; gain = 204.930 ; free physical = 3879 ; free virtual = 15446
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1700.688 ; gain = 0.000 ; free physical = 3819 ; free virtual = 15385
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1700.688 ; gain = 206.930 ; free physical = 3867 ; free virtual = 15433
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1700.688 ; gain = 0.000 ; free physical = 3867 ; free virtual = 15433
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.runs/synth_1/TopLevel_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopLevel_wrapper_utilization_synth.rpt -pb TopLevel_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 22 16:08:11 2020...

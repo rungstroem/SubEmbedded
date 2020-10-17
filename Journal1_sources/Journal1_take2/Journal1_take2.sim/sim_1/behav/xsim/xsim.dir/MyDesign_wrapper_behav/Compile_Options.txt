@@ -1,0 +1,1 @@
+-wto "6ab46d614fc94194af1efaf6ca023262" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "MyDesign_wrapper_behav" "xil_defaultlib.MyDesign_wrapper" -log "elaborate.log" 

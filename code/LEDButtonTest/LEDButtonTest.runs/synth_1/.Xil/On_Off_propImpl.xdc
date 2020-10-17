@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:/home/runge/Subjects/Embedded/code/LEDButtonTest/LEDButtonTest.srcs/constrs_1/new/const_1.xdc rfile:../../../LEDButtonTest.srcs/constrs_1/new/const_1.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D19 [get_ports A]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R14 [get_ports B]

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/new/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1/Journal1.srcs/sources_1/new/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce'

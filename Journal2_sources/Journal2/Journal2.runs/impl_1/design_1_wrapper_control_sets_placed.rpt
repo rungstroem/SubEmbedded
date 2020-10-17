@@ -1,0 +1,84 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sun Oct 11 19:34:26 2020
+| Host         : E7440-big-ARCH running 64-bit unknown
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    45 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            3 |
+|      5 |            2 |
+|      8 |            2 |
+|     10 |            2 |
+|     11 |            1 |
+|     13 |            1 |
+|    16+ |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           10 |
+| No           | No                    | Yes                    |              24 |            9 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              28 |            6 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                      |               Enable Signal               |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  design_1_i/RAMController_0/U0/shift_load_reg_i_1_n_0  |                                           | design_1_i/RAMController_0/U0/shift_load_reg_i_2_n_0 |                1 |              1 |
+|  design_1_i/RAMController_0/U0/addrSig                 |                                           |                                                      |                1 |              4 |
+|  clk_0_IBUF_BUFG                                       | design_1_i/tx_mod_0/U0/cnt_bit[3]_i_1_n_0 | rst_0_IBUF                                           |                1 |              4 |
+|  clk_0_IBUF_BUFG                                       | design_1_i/tx_mod_0/U0/count              | rst_0_IBUF                                           |                1 |              4 |
+|  design_1_i/RAMController_0/U0/nextState               |                                           |                                                      |                2 |              5 |
+|  clk_0_IBUF_BUFG                                       |                                           |                                                      |                2 |              5 |
+|  design_1_i/RAMController_0/U0/dIn_RAM_reg[7]_i_1_n_0  |                                           |                                                      |                2 |              8 |
+|  design_1_i/RAMController_0/U0/dIn_UART_reg[7]_i_1_n_0 |                                           |                                                      |                3 |              8 |
+|  design_1_i/clk_divider_0/U0/clk_div                   | design_1_i/rx_mod_0/U0/rxreg[8]_i_1_n_0   | rst_0_IBUF                                           |                2 |             10 |
+|  clk_0_IBUF_BUFG                                       | design_1_i/tx_mod_0/U0/reg_data           | rst_0_IBUF                                           |                2 |             10 |
+|  clk_0_IBUF_BUFG                                       |                                           | rst_0_IBUF                                           |                4 |             11 |
+|  design_1_i/clk_divider_0/U0/clk_div                   |                                           | rst_0_IBUF                                           |                5 |             13 |
+|  clk_0_IBUF_BUFG                                       | RW_0_IBUF                                 |                                                      |                2 |             16 |
++--------------------------------------------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,39 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "On_Off")
+(DATE "Tue Sep 15 10:50:58 2020")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2018.3")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE A_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1393.0:1463.4:1463.4) (1393.0:1463.4:1463.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE B_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3326.6:3528.8:3528.8) (3326.6:3528.8:3528.8))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "On_Off")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT A_IBUF_inst/O B_OBUF_inst/I (3334.6:3510.0:3510.0) (3334.6:3510.0:3510.0))
+      )
+    )
+)
+)

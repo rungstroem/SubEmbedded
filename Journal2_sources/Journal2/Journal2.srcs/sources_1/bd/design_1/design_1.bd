@@ -1,0 +1,307 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE8A245B344AB8FF",
+      "device": "xc7z020clg400-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "clk_divider_0": "",
+      "rx_mod_0": "",
+      "tx_mod_0": "",
+      "RAMController_0": "",
+      "RAM16x8_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "RW_0": {
+        "direction": "I"
+      },
+      "sin_0": {
+        "direction": "I"
+      },
+      "sout_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clk_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clk_divider:1.0",
+        "xci_name": "design_1_clk_divider_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clk_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "rx_mod_0": {
+        "vlnv": "xilinx.com:module_ref:rx_mod:1.0",
+        "xci_name": "design_1_rx_mod_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "rx_mod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "intr": {
+            "type": "intr",
+            "direction": "O"
+          },
+          "sin": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "tx_mod_0": {
+        "vlnv": "xilinx.com:module_ref:tx_mod:1.0",
+        "xci_name": "design_1_tx_mod_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "tx_mod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clkfast": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "shift_load": {
+            "direction": "I"
+          },
+          "sout": {
+            "direction": "O"
+          },
+          "xmitmt": {
+            "direction": "O"
+          }
+        }
+      },
+      "RAMController_0": {
+        "vlnv": "xilinx.com:module_ref:RAMController:1.0",
+        "xci_name": "design_1_RAMController_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAMController",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "intr": {
+            "type": "intr",
+            "direction": "I"
+          },
+          "RW": {
+            "direction": "I"
+          },
+          "xmint": {
+            "direction": "I"
+          },
+          "shift_load": {
+            "direction": "O"
+          },
+          "dOut_UART": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dIn_UART": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "dIn_RAM": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "dOut_RAM": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "RAM16x8_0": {
+        "vlnv": "xilinx.com:module_ref:RAM16x8:1.0",
+        "xci_name": "design_1_RAM16x8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAM16x8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RW": {
+            "direction": "I"
+          },
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "clk_divider_0/rst",
+          "rx_mod_0/rst",
+          "tx_mod_0/rst",
+          "RAMController_0/rst"
+        ]
+      },
+      "sin_0_1": {
+        "ports": [
+          "sin_0",
+          "rx_mod_0/sin"
+        ]
+      },
+      "tx_mod_0_sout": {
+        "ports": [
+          "tx_mod_0/sout",
+          "sout_0"
+        ]
+      },
+      "RW_0_1": {
+        "ports": [
+          "RW_0",
+          "RAMController_0/RW",
+          "RAM16x8_0/RW"
+        ]
+      },
+      "rx_mod_0_intr": {
+        "ports": [
+          "rx_mod_0/intr",
+          "RAMController_0/intr"
+        ]
+      },
+      "tx_mod_0_xmitmt": {
+        "ports": [
+          "tx_mod_0/xmitmt",
+          "RAMController_0/xmint"
+        ]
+      },
+      "RAMController_0_shift_load": {
+        "ports": [
+          "RAMController_0/shift_load",
+          "tx_mod_0/shift_load"
+        ]
+      },
+      "rx_mod_0_data_out": {
+        "ports": [
+          "rx_mod_0/data_out",
+          "RAMController_0/dOut_UART"
+        ]
+      },
+      "RAMController_0_dIn_UART": {
+        "ports": [
+          "RAMController_0/dIn_UART",
+          "tx_mod_0/data_in"
+        ]
+      },
+      "RAMController_0_dIn_RAM": {
+        "ports": [
+          "RAMController_0/dIn_RAM",
+          "RAM16x8_0/din"
+        ]
+      },
+      "RAMController_0_addr": {
+        "ports": [
+          "RAMController_0/addr",
+          "RAM16x8_0/addr"
+        ]
+      },
+      "RAM16x8_0_dout": {
+        "ports": [
+          "RAM16x8_0/dout",
+          "RAMController_0/dOut_RAM"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "clk_0",
+          "clk_divider_0/clk",
+          "tx_mod_0/clkfast",
+          "RAM16x8_0/clk",
+          "RAMController_0/clk"
+        ]
+      },
+      "clk_divider_0_clk_div": {
+        "ports": [
+          "clk_divider_0/clk_div",
+          "rx_mod_0/clk"
+        ]
+      }
+    }
+  }
+}

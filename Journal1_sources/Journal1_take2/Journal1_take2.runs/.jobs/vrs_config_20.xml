@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="MyDesign_lookUp_table_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_lookUp_table_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="MyDesign_lookUp_table_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

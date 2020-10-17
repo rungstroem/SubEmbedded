@@ -1,0 +1,26 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 87f1acfa6c5340f385f1904744a9f69c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling architecture behavioral of entity xil_defaultlib.RAMController [ramcontroller_default]
+Compiling architecture design_1_ramcontroller_0_0_arch of entity xil_defaultlib.design_1_RAMController_0_0 [design_1_ramcontroller_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.clk_divider [clk_divider_default]
+Compiling architecture design_1_clk_divider_0_0_arch of entity xil_defaultlib.design_1_clk_divider_0_0 [design_1_clk_divider_0_0_default]
+Compiling architecture rtl of entity xil_defaultlib.rx_mod [rx_mod_default]
+Compiling architecture design_1_rx_mod_0_0_arch of entity xil_defaultlib.design_1_rx_mod_0_0 [design_1_rx_mod_0_0_default]
+Compiling architecture fsm of entity xil_defaultlib.tx_mod [tx_mod_default]
+Compiling architecture design_1_tx_mod_0_0_arch of entity xil_defaultlib.design_1_tx_mod_0_0 [design_1_tx_mod_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav

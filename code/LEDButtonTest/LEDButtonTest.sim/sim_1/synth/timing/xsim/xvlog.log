@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/runge/Subjects/Embedded/code/LEDButtonTest/LEDButtonTest.sim/sim_1/synth/timing/xsim/On_Off_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module On_Off
+INFO: [VRFC 10-311] analyzing module glbl

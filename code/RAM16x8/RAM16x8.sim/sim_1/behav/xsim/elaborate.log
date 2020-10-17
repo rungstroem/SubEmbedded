@@ -1,0 +1,22 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 4e1d67ae2bab43f0afefd406d520be8c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling architecture behavioral of entity xil_defaultlib.RAM16x8 [ram16x8_default]
+Compiling architecture design_1_ram16x8_0_1_arch of entity xil_defaultlib.design_1_RAM16x8_0_1 [design_1_ram16x8_0_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAMController [ramcontroller_default]
+Compiling architecture design_1_ramcontroller_0_1_arch of entity xil_defaultlib.design_1_RAMController_0_1 [design_1_ramcontroller_0_1_defau...]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav

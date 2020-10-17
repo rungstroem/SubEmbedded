@@ -1,0 +1,287 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD2FEB9CF87ECFA63",
+      "device": "xc7z020clg400-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "RAMController_0": "",
+      "RAM16x8_0": ""
+    },
+    "ports": {
+      "RW_0": {
+        "direction": "I"
+      },
+      "addr_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "dIn_RAM_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "dIn_UART_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "dOut_UART_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "intr_0": {
+        "type": "intr",
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "shift_load_0": {
+        "direction": "O"
+      },
+      "xmint_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "RAMController_0": {
+        "vlnv": "xilinx.com:module_ref:RAMController:1.0",
+        "xci_name": "design_1_RAMController_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAMController",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "intr": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "RW": {
+            "direction": "I"
+          },
+          "xmint": {
+            "direction": "I"
+          },
+          "shift_load": {
+            "direction": "O"
+          },
+          "dOut_UART": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dIn_UART": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "dIn_RAM": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "dOut_RAM": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "RAM16x8_0": {
+        "vlnv": "xilinx.com:module_ref:RAM16x8:1.0",
+        "xci_name": "design_1_RAM16x8_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAM16x8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "wr": {
+            "direction": "I"
+          },
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "RW_0_1": {
+        "ports": [
+          "RW_0",
+          "RAMController_0/RW",
+          "RAM16x8_0/wr"
+        ]
+      },
+      "RAMController_0_addr": {
+        "ports": [
+          "RAMController_0/addr",
+          "addr_0",
+          "RAM16x8_0/addr"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "RAMController_0/clk",
+          "RAM16x8_0/clk"
+        ]
+      },
+      "RAMController_0_dIn_RAM": {
+        "ports": [
+          "RAMController_0/dIn_RAM",
+          "dIn_RAM_0",
+          "RAM16x8_0/din"
+        ]
+      },
+      "RAMController_0_dIn_UART": {
+        "ports": [
+          "RAMController_0/dIn_UART",
+          "dIn_UART_0"
+        ]
+      },
+      "dOut_UART_0_1": {
+        "ports": [
+          "dOut_UART_0",
+          "RAMController_0/dOut_UART"
+        ]
+      },
+      "intr_0_1": {
+        "ports": [
+          "intr_0",
+          "RAMController_0/intr"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "RAMController_0/rst"
+        ]
+      },
+      "RAMController_0_shift_load": {
+        "ports": [
+          "RAMController_0/shift_load",
+          "shift_load_0"
+        ]
+      },
+      "xmint_0_1": {
+        "ports": [
+          "xmint_0",
+          "RAMController_0/xmint"
+        ]
+      },
+      "RAM16x8_0_dout": {
+        "ports": [
+          "RAM16x8_0/dout",
+          "RAMController_0/dOut_RAM"
+        ]
+      }
+    }
+  }
+}

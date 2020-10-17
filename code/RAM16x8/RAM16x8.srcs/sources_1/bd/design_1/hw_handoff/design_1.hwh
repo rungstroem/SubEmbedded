@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Oct 11 13:58:38 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="RW_0" SIGIS="undef" SIGNAME="External_Ports_RW_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="RW"/>
+        <CONNECTION INSTANCE="RAM16x8_0" PORT="wr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="addr_0" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_addr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="addr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="clk"/>
+        <CONNECTION INSTANCE="RAM16x8_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="dIn_RAM_0" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_dIn_RAM">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="dIn_RAM"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="dIn_UART_0" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_dIn_UART">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="dIn_UART"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="dOut_UART_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_dOut_UART_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="dOut_UART"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="intr_0" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="External_Ports_intr_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="intr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst_0" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="shift_load_0" SIGIS="undef" SIGNAME="RAMController_0_shift_load">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="shift_load"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="xmint_0" SIGIS="undef" SIGNAME="External_Ports_xmint_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAMController_0" PORT="xmint"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/RAM16x8_0" HWVERSION="1.0" INSTANCE="RAM16x8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RAM16x8" VLNV="xilinx.com:module_ref:RAM16x8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RAM16x8_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wr" SIGIS="undef" SIGNAME="External_Ports_RW_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RW_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="din" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_dIn_RAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAMController_0" PORT="dIn_RAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="RAM16x8_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAMController_0" PORT="dOut_RAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAMController_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RAMController_0" HWVERSION="1.0" INSTANCE="RAMController_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RAMController" VLNV="xilinx.com:module_ref:RAMController:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RAMController_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RW" SIGIS="undef" SIGNAME="External_Ports_RW_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RW_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="intr" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="External_Ports_intr_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="intr_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="xmint" SIGIS="undef" SIGNAME="External_Ports_xmint_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="xmint_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="shift_load" SIGIS="undef" SIGNAME="RAMController_0_shift_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="shift_load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="dOut_UART" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_dOut_UART_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dOut_UART_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="dIn_UART" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_dIn_UART">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dIn_UART_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="dIn_RAM" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_dIn_RAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dIn_RAM_0"/>
+            <CONNECTION INSTANCE="RAM16x8_0" PORT="din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="dOut_RAM" RIGHT="0" SIGIS="undef" SIGNAME="RAM16x8_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM16x8_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="RAMController_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="addr_0"/>
+            <CONNECTION INSTANCE="RAM16x8_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

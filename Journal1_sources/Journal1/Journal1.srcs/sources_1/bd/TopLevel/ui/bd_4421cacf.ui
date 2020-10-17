@@ -1,0 +1,39 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port rst_0 -pg 1 -y 230 -defaultsOSRD
+preplace port sysclk -pg 1 -y 150 -defaultsOSRD
+preplace portBus y_0 -pg 1 -y 180 -defaultsOSRD
+preplace portBus in1_0 -pg 1 -y 300 -defaultsOSRD -right
+preplace portBus TestOut -pg 1 -y -210 -defaultsOSRD
+preplace portBus out1_0 -pg 1 -y -20 -defaultsOSRD
+preplace inst clock_scaler1_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst latch_0 -pg 1 -lvl 4 -y -20 -defaultsOSRD
+preplace inst lookUp_table_0 -pg 1 -lvl 5 -y -20 -defaultsOSRD
+preplace inst bundle_splitter_dec_0 -pg 1 -lvl 4 -y 180 -defaultsOSRD
+preplace inst inverter_0 -pg 1 -lvl 2 -y 600 -defaultsOSRD -orient R180
+preplace inst bundle_splitter_mux_0 -pg 1 -lvl 4 -y 370 -defaultsOSRD
+preplace inst debounce_0 -pg 1 -lvl 3 -y 520 -defaultsOSRD
+preplace inst multiplexer_4x1_0 -pg 1 -lvl 5 -y 380 -defaultsOSRD
+preplace inst display_0 -pg 1 -lvl 6 -y -20 -defaultsOSRD
+preplace inst decoder_2x4_0 -pg 1 -lvl 5 -y 180 -defaultsOSRD
+preplace inst counter_4bits_0 -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace netloc display_0_out1 1 6 1 N
+preplace netloc clock_scaler1_0_clk_o 1 1 2 0J 500 N
+preplace netloc bundle_splitter_dec_0_y 1 4 1 N
+preplace netloc counter_4bits_0_count 1 2 2 N 180 530
+preplace netloc debounce_0_intr 1 2 2 N 600 540
+preplace netloc rst_0_1 1 0 3 -460J 230 10 540 N
+preplace netloc decoder_2x4_0_y 1 5 2 NJ 180 NJ
+preplace netloc latch_0_out1 1 4 1 N
+preplace netloc inverter_0_out1 1 1 1 20
+preplace netloc clk_i_0_1 1 0 1 N
+preplace netloc in1_0_1 1 4 3 770J 300 N 300 N
+preplace netloc multiplexer_4x1_0_out1 1 2 4 240 310 NJ 310 NJ 310 1020
+preplace netloc bundle_splitter_mux_0_y 1 4 1 N
+preplace netloc lookUp_table_0_out1 1 5 2 1020 -210 N
+levelinfo -pg 1 -480 -90 140 430 660 910 1150 1420 -top -350 -bot 970
+"
+}
+0

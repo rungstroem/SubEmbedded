@@ -1,0 +1,31 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port rst_0 -pg 1 -y -10 -defaultsOSRD
+preplace port intr_0 -pg 1 -y 30 -defaultsOSRD
+preplace port shift_load_0 -pg 1 -y 0 -defaultsOSRD
+preplace port clk_0 -pg 1 -y -30 -defaultsOSRD
+preplace port RW_0 -pg 1 -y 10 -defaultsOSRD
+preplace port xmint_0 -pg 1 -y 50 -defaultsOSRD
+preplace portBus addr_0 -pg 1 -y 60 -defaultsOSRD
+preplace portBus dIn_UART_0 -pg 1 -y 20 -defaultsOSRD
+preplace portBus dIn_RAM_0 -pg 1 -y 40 -defaultsOSRD
+preplace portBus dOut_UART_0 -pg 1 -y 70 -defaultsOSRD
+preplace inst RAMController_0 -pg 1 -lvl 1 -y 30 -defaultsOSRD
+preplace inst RAM16x8_0 -pg 1 -lvl 1 -y 260 -defaultsOSRD
+preplace netloc dOut_UART_0_1 1 0 1 NJ
+preplace netloc intr_0_1 1 0 1 NJ
+preplace netloc RAMController_0_dIn_UART 1 1 1 NJ
+preplace netloc clk_0_1 1 0 1 -270J
+preplace netloc RAM16x8_0_dout 1 0 2 -240 -90 80
+preplace netloc RAMController_0_shift_load 1 1 1 NJ
+preplace netloc rst_0_1 1 0 1 NJ
+preplace netloc xmint_0_1 1 0 1 NJ
+preplace netloc RAMController_0_dIn_RAM 1 0 2 -260 -110 100J
+preplace netloc RAMController_0_addr 1 0 2 -250 -100 90J
+preplace netloc RW_0_1 1 0 1 -280J
+levelinfo -pg 1 -300 -80 540 -top -130 -bot 350
+"
+}
+

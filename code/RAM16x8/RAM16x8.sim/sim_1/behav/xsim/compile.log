@@ -1,0 +1,76 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+ERROR: [VRFC 10-1412] syntax error near sign2al [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:25]
+ERROR: [VRFC 10-2989] 'currentstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:31]
+ERROR: [VRFC 10-2989] 'addrsig' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:33]
+ERROR: [VRFC 10-2989] 'currentstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:35]
+ERROR: [VRFC 10-2989] 'addrsig' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:42]
+ERROR: [VRFC 10-2989] 'nextstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:45]
+ERROR: [VRFC 10-2989] 'nextstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:48]
+ERROR: [VRFC 10-2989] 'currentstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:41]
+ERROR: [VRFC 10-2989] 'nextstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:53]
+ERROR: [VRFC 10-2989] 'currentstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:52]
+ERROR: [VRFC 10-2989] 'nextstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:58]
+ERROR: [VRFC 10-2989] 'currentstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:56]
+ERROR: [VRFC 10-2989] 'addrsig' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:63]
+ERROR: [VRFC 10-2989] 'nextstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:66]
+ERROR: [VRFC 10-2989] 'addrsig' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:70]
+ERROR: [VRFC 10-2989] 'nextstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:71]
+ERROR: [VRFC 10-2989] 'currentstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:62]
+ERROR: [VRFC 10-2989] 'addrsig' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:77]
+ERROR: [VRFC 10-2989] 'nextstate' is not declared [/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd:79]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAMController'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/new/RAM16x8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM16x8'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.ip_user_files/bd/design_1/ip/design_1_RAM16x8_0_0/sim/design_1_RAM16x8_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_RAM16x8_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.ip_user_files/bd/design_1/ip/design_1_RAMController_0_0/sim/design_1_RAMController_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_RAMController_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.ip_user_files/bd/design_1/ip/design_1_RAMController_0_1/sim/design_1_RAMController_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_RAMController_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.ip_user_files/bd/design_1/ip/design_1_RAM16x8_0_1/sim/design_1_RAM16x8_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_RAM16x8_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'

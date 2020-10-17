@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct 10 13:05:44 2020
+# Process ID: 2182
+# Current directory: /home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.sim/sim_1/behav/xsim/xsim.dir/RAMController_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/runge/Subjects/Embedded/code/RAM16x8/RAM16x8.sim/sim_1/behav/xsim/xsim.dir/RAMController_behav/webtalk/xsim_webtalk.tcl -notrace

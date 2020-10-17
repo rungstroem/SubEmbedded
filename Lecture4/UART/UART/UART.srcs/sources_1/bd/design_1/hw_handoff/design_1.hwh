@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 22 11:18:13 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="rst_0" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_divider_0" PORT="rst"/>
+        <CONNECTION INSTANCE="rx_mod_0" PORT="rst"/>
+        <CONNECTION INSTANCE="tx_mod_0" PORT="rst"/>
+        <CONNECTION INSTANCE="uart_loop_mod_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sin_0" SIGIS="undef" SIGNAME="External_Ports_sin_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rx_mod_0" PORT="sin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sout_0" SIGIS="undef" SIGNAME="tx_mod_0_sout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="tx_mod_0" PORT="sout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_divider_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/clk_divider_0" HWVERSION="1.0" INSTANCE="clk_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_divider" VLNV="xilinx.com:module_ref:clk_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clk_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clk_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tx_mod_0" PORT="clkfast"/>
+            <CONNECTION INSTANCE="uart_loop_mod_0" PORT="clkfast"/>
+            <CONNECTION INSTANCE="rx_mod_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/rx_mod_0" HWVERSION="1.0" INSTANCE="rx_mod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rx_mod" VLNV="xilinx.com:module_ref:rx_mod:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_rx_mod_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sin" SIGIS="undef" SIGNAME="External_Ports_sin_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sin_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="rx_mod_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_loop_mod_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="intr" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="rx_mod_0_intr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_loop_mod_0" PORT="intr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/tx_mod_0" HWVERSION="1.0" INSTANCE="tx_mod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="tx_mod" VLNV="xilinx.com:module_ref:tx_mod:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_tx_mod_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clkfast" SIGIS="undef" SIGNAME="clk_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="uart_loop_mod_0_data_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_loop_mod_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="shift_load" SIGIS="undef" SIGNAME="uart_loop_mod_0_shift_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_loop_mod_0" PORT="shift_load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sout" SIGIS="undef" SIGNAME="tx_mod_0_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sout_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="xmitmt" SIGIS="undef" SIGNAME="tx_mod_0_xmitmt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uart_loop_mod_0" PORT="xmitmt"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/uart_loop_mod_0" HWVERSION="1.0" INSTANCE="uart_loop_mod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uart_loop_mod" VLNV="xilinx.com:module_ref:uart_loop_mod:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_uart_loop_mod_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clkfast" SIGIS="undef" SIGNAME="clk_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="rx_mod_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rx_mod_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="intr" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="rx_mod_0_intr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rx_mod_0" PORT="intr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="xmitmt" SIGIS="undef" SIGNAME="tx_mod_0_xmitmt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tx_mod_0" PORT="xmitmt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="uart_loop_mod_0_data_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tx_mod_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="shift_load" SIGIS="undef" SIGNAME="uart_loop_mod_0_shift_load">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="tx_mod_0" PORT="shift_load"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

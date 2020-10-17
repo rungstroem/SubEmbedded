@@ -1,0 +1,72 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/counter_4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_4bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/bundle_splitter_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bundle_splitter_mux'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/bundle_splitter_dec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bundle_splitter_dec'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/decoder_2x4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoder_2x4'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/multiplexer_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplexer_4x1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/inverter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'inverter'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/lookUp_table.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lookUp_table'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_counter_4bits_0_0/sim/MyDesign_counter_4bits_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_counter_4bits_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_bundle_splitter_mux_0_0/sim/MyDesign_bundle_splitter_mux_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_bundle_splitter_mux_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_bundle_splitter_dec_0_0/sim/MyDesign_bundle_splitter_dec_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_bundle_splitter_dec_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_decoder_2x4_0_0/sim/MyDesign_decoder_2x4_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_decoder_2x4_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_multiplexer_4x1_0_0/sim/MyDesign_multiplexer_4x1_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_multiplexer_4x1_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_inverter_0_0/sim/MyDesign_inverter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_inverter_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_lookUp_table_0_0/sim/MyDesign_lookUp_table_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_lookUp_table_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_display_0_0/sim/MyDesign_display_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_display_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/sim/MyDesign.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.srcs/sources_1/bd/MyDesign/hdl/MyDesign_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/decoder_2x4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoder_2x4'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/multiplexer_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplexer_4x1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/lookUp_table.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lookUp_table'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/clock_scaler1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_scaler1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/latch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'latch'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/pad_mod_behav.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pad_mod'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_decoder_2x4_0_0/sim/MyDesign_decoder_2x4_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_decoder_2x4_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_multiplexer_4x1_0_0/sim/MyDesign_multiplexer_4x1_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_multiplexer_4x1_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_lookUp_table_0_0/sim/MyDesign_lookUp_table_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_lookUp_table_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_display_0_0/sim/MyDesign_display_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_display_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/sim/MyDesign.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_clock_scaler1_0_0/sim/MyDesign_clock_scaler1_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_clock_scaler1_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_latch_0_0/sim/MyDesign_latch_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_latch_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_pad_mod_0_0/sim/MyDesign_pad_mod_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_pad_mod_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.srcs/sources_1/bd/MyDesign/hdl/MyDesign_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.ip_user_files/bd/MyDesign/sim/MyDesign.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.srcs/sources_1/bd/MyDesign/hdl/MyDesign_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MyDesign_wrapper'

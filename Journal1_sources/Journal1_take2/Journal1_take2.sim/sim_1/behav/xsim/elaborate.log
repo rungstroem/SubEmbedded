@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 6ab46d614fc94194af1efaf6ca023262 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot MyDesign_wrapper_behav xil_defaultlib.MyDesign_wrapper -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/runge/Subjects/Embedded/Journal1_sources/decoder_2x4.vhd:11]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mydesign_wrapper in library work failed.

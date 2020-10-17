@@ -1,0 +1,29 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../counter_4bits.vhd" \
+"../../../../../bundle_splitter_mux.vhd" \
+"../../../../../bundle_splitter_dec.vhd" \
+"../../../../../decoder_2x4.vhd" \
+"../../../../../multiplexer_4x1.vhd" \
+"../../../../../inverter.vhd" \
+"../../../../../lookUp_table.vhd" \
+"../../../../../display.vhd" \
+"../../../../../clock_scaler1.vhd" \
+"../../../../../latch.vhd" \
+"../../../../../pad_mod_behav.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_counter_4bits_0_0/sim/MyDesign_counter_4bits_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_bundle_splitter_mux_0_0/sim/MyDesign_bundle_splitter_mux_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_bundle_splitter_dec_0_0/sim/MyDesign_bundle_splitter_dec_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_decoder_2x4_0_0/sim/MyDesign_decoder_2x4_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_multiplexer_4x1_0_0/sim/MyDesign_multiplexer_4x1_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_inverter_0_0/sim/MyDesign_inverter_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_lookUp_table_0_0/sim/MyDesign_lookUp_table_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_display_0_0/sim/MyDesign_display_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/sim/MyDesign.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_clock_scaler1_0_0/sim/MyDesign_clock_scaler1_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_latch_0_0/sim/MyDesign_latch_0_0.vhd" \
+"../../../../Journal1_take2.ip_user_files/bd/MyDesign/ip/MyDesign_pad_mod_0_0/sim/MyDesign_pad_mod_0_0.vhd" \
+"../../../../Journal1_take2.srcs/sources_1/bd/MyDesign/hdl/MyDesign_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

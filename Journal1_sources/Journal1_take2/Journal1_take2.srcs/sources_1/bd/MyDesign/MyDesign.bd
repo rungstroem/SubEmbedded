@@ -1,0 +1,402 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFB17D02525DA6049",
+      "device": "xc7z020clg400-1",
+      "name": "MyDesign",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "counter_4bits_0": "",
+      "bundle_splitter_mux_0": "",
+      "bundle_splitter_dec_0": "",
+      "inverter_0": "",
+      "multiplexer_4x1_0": "",
+      "decoder_2x4_0": "",
+      "lookUp_table_0": "",
+      "display_0": "",
+      "clock_scaler1_0": "",
+      "latch_0": "",
+      "pad_mod_0": ""
+    },
+    "ports": {
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "pout": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "TestOut": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "sysclk": {
+        "direction": "I"
+      },
+      "key_pressed_0": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      }
+    },
+    "components": {
+      "counter_4bits_0": {
+        "vlnv": "xilinx.com:module_ref:counter_4bits:1.0",
+        "xci_name": "MyDesign_counter_4bits_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter_4bits",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "count": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "bundle_splitter_mux_0": {
+        "vlnv": "xilinx.com:module_ref:bundle_splitter_mux:1.0",
+        "xci_name": "MyDesign_bundle_splitter_mux_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bundle_splitter_mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "out1": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "bundle_splitter_dec_0": {
+        "vlnv": "xilinx.com:module_ref:bundle_splitter_dec:1.0",
+        "xci_name": "MyDesign_bundle_splitter_dec_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bundle_splitter_dec",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "out1": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "inverter_0": {
+        "vlnv": "xilinx.com:module_ref:inverter:1.0",
+        "xci_name": "MyDesign_inverter_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I"
+          },
+          "out1": {
+            "direction": "O"
+          }
+        }
+      },
+      "multiplexer_4x1_0": {
+        "vlnv": "xilinx.com:module_ref:multiplexer_4x1:1.0",
+        "xci_name": "MyDesign_multiplexer_4x1_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "multiplexer_4x1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "out1": {
+            "direction": "O"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "decoder_2x4_0": {
+        "vlnv": "xilinx.com:module_ref:decoder_2x4:1.0",
+        "xci_name": "MyDesign_decoder_2x4_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decoder_2x4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "lookUp_table_0": {
+        "vlnv": "xilinx.com:module_ref:lookUp_table:1.0",
+        "xci_name": "MyDesign_lookUp_table_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "lookUp_table",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "out1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "display_0": {
+        "vlnv": "xilinx.com:module_ref:display:1.0",
+        "xci_name": "MyDesign_display_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "display",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "out1": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "clock_scaler1_0": {
+        "vlnv": "xilinx.com:module_ref:clock_scaler1:1.0",
+        "xci_name": "MyDesign_clock_scaler1_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_scaler1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk_i": {
+            "direction": "I"
+          },
+          "clk_o": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_0": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "xci_name": "MyDesign_latch_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Ac": {
+            "direction": "I"
+          },
+          "out1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "pad_mod_0": {
+        "vlnv": "xilinx.com:module_ref:pad_mod:1.0",
+        "xci_name": "MyDesign_pad_mod_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pad_mod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "key_pressed": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "rows": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "cols": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "counter_4bits_0/rst",
+          "clock_scaler1_0/rst"
+        ]
+      },
+      "bundle_splitter_dec_0_out1": {
+        "ports": [
+          "bundle_splitter_dec_0/out1",
+          "decoder_2x4_0/x"
+        ]
+      },
+      "bundle_splitter_mux_0_out1": {
+        "ports": [
+          "bundle_splitter_mux_0/out1",
+          "multiplexer_4x1_0/sel"
+        ]
+      },
+      "debounce_0_intr": {
+        "ports": [
+          "multiplexer_4x1_0/out1",
+          "inverter_0/in1",
+          "latch_0/Ac"
+        ]
+      },
+      "inverter_0_out1": {
+        "ports": [
+          "inverter_0/out1",
+          "counter_4bits_0/en"
+        ]
+      },
+      "lookUp_table_0_out1": {
+        "ports": [
+          "lookUp_table_0/out1",
+          "TestOut",
+          "display_0/in1"
+        ]
+      },
+      "display_0_out1": {
+        "ports": [
+          "display_0/out1",
+          "pout"
+        ]
+      },
+      "sysclk_1": {
+        "ports": [
+          "sysclk",
+          "clock_scaler1_0/clk_i"
+        ]
+      },
+      "clock_scaler1_0_clk_o": {
+        "ports": [
+          "clock_scaler1_0/clk_o",
+          "counter_4bits_0/clk"
+        ]
+      },
+      "counter_4bits_0_count": {
+        "ports": [
+          "counter_4bits_0/count",
+          "bundle_splitter_dec_0/in1",
+          "bundle_splitter_mux_0/in1",
+          "latch_0/in1"
+        ]
+      },
+      "latch_0_out1": {
+        "ports": [
+          "latch_0/out1",
+          "lookUp_table_0/in1"
+        ]
+      },
+      "decoder_2x4_0_y": {
+        "ports": [
+          "decoder_2x4_0/y",
+          "pad_mod_0/rows"
+        ]
+      },
+      "pad_mod_0_cols": {
+        "ports": [
+          "pad_mod_0/cols",
+          "multiplexer_4x1_0/in1"
+        ]
+      },
+      "key_pressed_0_1": {
+        "ports": [
+          "key_pressed_0",
+          "pad_mod_0/key_pressed"
+        ]
+      }
+    }
+  }
+}

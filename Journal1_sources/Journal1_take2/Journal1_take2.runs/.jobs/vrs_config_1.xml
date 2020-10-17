@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="MyDesign_bundle_splitter_mux_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_bundle_splitter_mux_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_counter_4bits_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_counter_4bits_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_clock_scaler1_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_clock_scaler1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_multiplexer_4x1_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_multiplexer_4x1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_debounce_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_debounce_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_inverter_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_inverter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_latch_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_latch_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_lookUp_table_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_lookUp_table_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_display_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_display_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_decoder_2x4_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_decoder_2x4_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MyDesign_bundle_splitter_dec_0_0_synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/MyDesign_bundle_splitter_dec_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="MyDesign_bundle_splitter_mux_0_0_synth_1"/>
+		<Parent Id="MyDesign_counter_4bits_0_0_synth_1"/>
+		<Parent Id="MyDesign_clock_scaler1_0_0_synth_1"/>
+		<Parent Id="MyDesign_multiplexer_4x1_0_0_synth_1"/>
+		<Parent Id="MyDesign_debounce_0_0_synth_1"/>
+		<Parent Id="MyDesign_inverter_0_0_synth_1"/>
+		<Parent Id="MyDesign_latch_0_0_synth_1"/>
+		<Parent Id="MyDesign_lookUp_table_0_0_synth_1"/>
+		<Parent Id="MyDesign_display_0_0_synth_1"/>
+		<Parent Id="MyDesign_decoder_2x4_0_0_synth_1"/>
+		<Parent Id="MyDesign_bundle_splitter_dec_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/runge/Subjects/Embedded/Journal1_sources/Journal1_take2/Journal1_take2.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="MyDesign_bundle_splitter_mux_0_0_synth_1"/>
+		<Parent Id="MyDesign_counter_4bits_0_0_synth_1"/>
+		<Parent Id="MyDesign_clock_scaler1_0_0_synth_1"/>
+		<Parent Id="MyDesign_multiplexer_4x1_0_0_synth_1"/>
+		<Parent Id="MyDesign_debounce_0_0_synth_1"/>
+		<Parent Id="MyDesign_inverter_0_0_synth_1"/>
+		<Parent Id="MyDesign_latch_0_0_synth_1"/>
+		<Parent Id="MyDesign_lookUp_table_0_0_synth_1"/>
+		<Parent Id="MyDesign_display_0_0_synth_1"/>
+		<Parent Id="MyDesign_decoder_2x4_0_0_synth_1"/>
+		<Parent Id="MyDesign_bundle_splitter_dec_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

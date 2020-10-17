@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 22 15:46:32 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="TopLevel" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="rst_0" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="counter_4bits_0" PORT="rst"/>
+        <CONNECTION INSTANCE="debounce_0" PORT="rst"/>
+        <CONNECTION INSTANCE="clock_scaler1_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sysclk" SIGIS="undef" SIGNAME="External_Ports_sysclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_scaler1_0" PORT="clk_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="out1_0" RIGHT="0" SIGIS="undef" SIGNAME="display_0_out1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_0" PORT="out1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="y_0" RIGHT="0" SIGIS="undef" SIGNAME="decoder_2x4_0_y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_2x4_0" PORT="y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="in1_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multiplexer_4x1_0" PORT="in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="TestOut" RIGHT="0" SIGIS="undef" SIGNAME="lookUp_table_0_out1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="lookUp_table_0" PORT="out1"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/bundle_splitter_dec_0" HWVERSION="1.0" INSTANCE="bundle_splitter_dec_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bundle_splitter_dec" VLNV="xilinx.com:module_ref:bundle_splitter_dec:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_bundle_splitter_dec_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="counter_4bits_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_4bits_0" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="out1" RIGHT="0" SIGIS="undef" SIGNAME="bundle_splitter_dec_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_2x4_0" PORT="x"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/bundle_splitter_mux_0" HWVERSION="1.0" INSTANCE="bundle_splitter_mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bundle_splitter_mux" VLNV="xilinx.com:module_ref:bundle_splitter_mux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_bundle_splitter_mux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="counter_4bits_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_4bits_0" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="out1" RIGHT="0" SIGIS="undef" SIGNAME="bundle_splitter_mux_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="multiplexer_4x1_0" PORT="sel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_scaler1_0" HWVERSION="1.0" INSTANCE="clock_scaler1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_scaler1" VLNV="xilinx.com:module_ref:clock_scaler1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_clock_scaler1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_i" SIGIS="undef" SIGNAME="External_Ports_sysclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sysclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_o" SIGIS="undef" SIGNAME="clock_scaler1_0_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_4bits_0" PORT="clk"/>
+            <CONNECTION INSTANCE="debounce_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/counter_4bits_0" HWVERSION="1.0" INSTANCE="counter_4bits_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="counter_4bits" VLNV="xilinx.com:module_ref:counter_4bits:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_counter_4bits_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_scaler1_0_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_scaler1_0" PORT="clk_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="inverter_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_0" PORT="out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="counter_4bits_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="in1"/>
+            <CONNECTION INSTANCE="bundle_splitter_dec_0" PORT="in1"/>
+            <CONNECTION INSTANCE="bundle_splitter_mux_0" PORT="in1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/debounce_0" HWVERSION="1.0" INSTANCE="debounce_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="debounce" VLNV="xilinx.com:module_ref:debounce:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_debounce_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_scaler1_0_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_scaler1_0" PORT="clk_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="strobe" SIGIS="undef" SIGNAME="multiplexer_4x1_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="multiplexer_4x1_0" PORT="out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="intr" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="debounce_0_intr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_0" PORT="in1"/>
+            <CONNECTION INSTANCE="latch_0" PORT="Ac"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decoder_2x4_0" HWVERSION="1.0" INSTANCE="decoder_2x4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decoder_2x4" VLNV="xilinx.com:module_ref:decoder_2x4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_decoder_2x4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="x" RIGHT="0" SIGIS="undef" SIGNAME="bundle_splitter_dec_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bundle_splitter_dec_0" PORT="out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="y" RIGHT="0" SIGIS="undef" SIGNAME="decoder_2x4_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="y_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/display_0" HWVERSION="1.0" INSTANCE="display_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="display" VLNV="xilinx.com:module_ref:display:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_display_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="lookUp_table_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lookUp_table_0" PORT="out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="out1" RIGHT="0" SIGIS="undef" SIGNAME="display_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out1_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_0" HWVERSION="1.0" INSTANCE="inverter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter" VLNV="xilinx.com:module_ref:inverter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_inverter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in1" SIGIS="undef" SIGNAME="debounce_0_intr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="intr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out1" SIGIS="undef" SIGNAME="inverter_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_4bits_0" PORT="en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_0" HWVERSION="1.0" INSTANCE="latch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_latch_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="counter_4bits_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_4bits_0" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ac" SIGIS="undef" SIGNAME="debounce_0_intr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="intr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="out1" RIGHT="0" SIGIS="undef" SIGNAME="latch_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lookUp_table_0" PORT="in1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/lookUp_table_0" HWVERSION="1.0" INSTANCE="lookUp_table_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="lookUp_table" VLNV="xilinx.com:module_ref:lookUp_table:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_lookUp_table_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="latch_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="latch_0" PORT="out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="out1" RIGHT="0" SIGIS="undef" SIGNAME="lookUp_table_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="display_0" PORT="in1"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="TestOut"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/multiplexer_4x1_0" HWVERSION="1.0" INSTANCE="multiplexer_4x1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="multiplexer_4x1" VLNV="xilinx.com:module_ref:multiplexer_4x1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TopLevel_multiplexer_4x1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="sel" RIGHT="0" SIGIS="undef" SIGNAME="bundle_splitter_mux_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bundle_splitter_mux_0" PORT="out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out1" SIGIS="undef" SIGNAME="multiplexer_4x1_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="strobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in1_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
